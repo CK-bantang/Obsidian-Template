@@ -1,0 +1,18 @@
+{
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false,
+  "promptDelete": false,
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "./assets",
+  "useMarkdownLinks": true,
+  "userIgnoreFilters": [
+    "assets/"
+  ],
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

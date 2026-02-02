@@ -1,0 +1,23 @@
+# 忽略系统文件
+
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+
+# 忽略 Obsidian 的工作区配置（只同步核心插件配置和主题，不同步窗口状态）
+
+.obsidian/workspace
+.obsidian/workspace-mobile
+.obsidian/workspace.json
+
+# 忽略可能的大文件或备份
+
+*.zip
+*.rar
+
+# 忽略 Agent 生成的文件
+
+agent/learning_progress.json
+agent/__pycache__/
+*.pyc
