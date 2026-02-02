@@ -76,10 +76,6 @@ git remote set-url origin <你的仓库地址>
 - 如果看到 `Permission denied` 错误，说明你需要先修改远程仓库地址或 Fork
 - 模板中的 Git 插件已禁用推送功能，避免误推送和错误提示
 
-### 🚀 快速开始
-
-修改远程地址后，用 Obsidian 打开这个文件夹即可开始使用！
-
 ## 🎯 核心特性
 
 - 📝 **双向链接** - 建立笔记之间的关联，构建知识网络
@@ -88,6 +84,29 @@ git remote set-url origin <你的仓库地址>
 - 📊 **可视化** - 白板、手绘图表、关系图谱等多种展示方式
 - 🔄 **Git 同步** - 支持多设备同步，数据安全可靠
 - 🌐 **Markdown 增强** - 支持表格、公式、代码高亮等
+
+## 📁 文件结构
+
+```
+Obsidian-Template/
+├── README.md              # 项目说明文档
+├── LICENSE               # MIT 开源协议
+├── .gitignore           # Git 忽略规则
+├── .obsidian/           # Obsidian 配置文件夹（隐藏）
+│   ├── plugins/          # 已安装的插件
+│   │   ├── obsidian-git/
+│   │   ├── tasks/
+│   │   ├── excalidraw/
+│   │   └── ...
+│   └── themes/           # 已安装的主题
+│       ├── Minimal/
+│       ├── Blue Topaz/
+│       └── ...
+└── Obsidian/            # 教程和文档
+    ├── 教程.md          # 完整的 Obsidian 使用教程
+    ├── 讲解思路.md      # 教程大纲
+    └── assets/          # 图片资源
+```
 
 ## 🔌 已安装插件
 
@@ -149,7 +168,7 @@ git remote set-url origin <你的仓库地址>
 
 **切换主题**: 设置 → 外观 → 主题
 
-## 🚀 快速开始
+## 📖 基础教程
 
 ### 1. 创建第一个笔记
 
@@ -227,6 +246,56 @@ git push -u origin main
 **方法三：Obsidian Sync（官方付费）**
 - 最稳定但需要订阅
 
+### 克隆后如何配置 Git 同步？
+
+1. **先修改远程仓库地址**（必须）
+   ```bash
+   git remote set-url origin <你的仓库地址>
+   ```
+
+2. **打开 Obsidian 设置**
+   - 点击设置图标 ⚙️
+   - 找到"Obsidian Git"插件
+
+3. **配置自动同步**
+   - Auto commit interval: 30（分钟）
+   - Auto push interval: 30（分钟）
+   - Auto pull interval: 60（分钟）
+   - Auto pull on boot: 开启
+
+4. **首次推送**
+   ```bash
+   git push -u origin main
+   ```
+
+**注意**：模板中的 Git 插件已禁用推送功能，配置时需要手动启用。
+
+### 插件显示为灰色怎么办？
+
+**原因**：插件未启用
+
+**解决方法**：
+1. 设置 → 第三方插件
+2. 找到对应的插件
+3. 点击开关，启用插件
+4. 重启 Obsidian（如果提示）
+
+### 如何导入其他 Obsidian 仓库的笔记？
+
+1. **复制笔记文件**
+   - 直接复制 `.md` 文件到本仓库
+   - 或者复制整个文件夹
+
+2. **更新链接**（如果有）
+   - 搜索并替换链接地址
+   - 检查双向链接是否正确
+
+3. **提交到 Git**
+   ```bash
+   git add .
+   git commit -m "Import notes from another vault"
+   git push
+   ```
 
 ## 💡 使用建议
 
@@ -239,7 +308,81 @@ git push -u origin main
 
 ## 📝 更新日志
 
-- 2026-01-14: 初始化知识库，配置基础插件和主题
+### 2026-02-02
+- 添加完整的使用教程（下载 Obsidian、克隆仓库、打开文件夹）
+- 添加详细的使用说明（Fork 和修改远程地址两种方式）
+- 优化 Git 插件配置（禁用自动推送和拉取）
+- 添加 MIT License 开源协议
+- 优化 README 结构，提升用户体验
+- 添加文件结构说明
+
+### 2026-01-14
+- 初始化知识库
+- 配置 15 个精选插件
+- 配置 9 款热门主题
+- 移除大文件，优化仓库大小（从 40MB 降到 5MB）
+
+---
+
+## 🤝 贡献指南
+
+欢迎对本项目做出贡献！如果你有改进建议或发现了 bug：
+
+### 报告问题
+
+1. 访问 [Issues](https://github.com/CK-bantang/Obsidian-Template/issues)
+2. 点击"New Issue"
+3. 详细描述问题或建议
+4. 如果是 bug，请提供：
+   - 复现步骤
+   - 预期行为
+   - 实际行为
+   - 截图（如有）
+
+### 提交代码
+
+1. **Fork 本仓库**
+   - 点击仓库右上角的"Fork"按钮
+
+2. **创建特性分支**
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+
+3. **提交更改**
+   ```bash
+   git add .
+   git commit -m "Add some feature"
+   ```
+
+4. **推送到分支**
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+
+5. **开启 Pull Request**
+   - 访问你的 Fork 仓库
+   - 点击"Compare & pull request"
+   - 填写 PR 描述
+   - 点击"Create pull request"
+
+---
+
+## 📝 开发规范
+
+- 保持代码风格一致
+- 添加必要的注释
+- 更新相关文档
+- 确保所有链接有效
+- 提交信息清晰明了
+
+## 🔗 有用链接
+
+- [Obsidian 官方文档](https://help.obsidian.md/)
+- [Obsidian 社区论坛](https://forum.obsidian.md/)
+- [Obsidian 插件商店](https://obsidian.md/plugins)
+- [Obsidian 发布说明](https://forum.obsidian.md/c/announcements/12)
+
 ---
 
 ⭐ 如果这个配置对你有帮助，欢迎 Star！
