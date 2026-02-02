@@ -10,7 +10,8 @@
 
 ### 1. 下载 Obsidian
 
-访问 https://obsidian.md/download，下载并安装适合你系统的版本。
+访问 https://obsidian.md/download
+，下载并安装适合你系统的版本。
 
 ---
 
@@ -26,7 +27,7 @@ cd Obsidian-Template
 
 ### 3. 用 Obsidian 打开文件夹
 
-启动 Obsidian，点击"打开文件夹"，选择 `Obsidian-Template` 文件夹即可开始使用！
+启动 Obsidian，点击 " 打开文件夹 "，选择 `Obsidian-Template` 文件夹即可开始使用！
 
 ---
 
@@ -87,7 +88,7 @@ git remote set-url origin <你的仓库地址>
 
 ## 📁 文件结构
 
-```
+```java
 Obsidian-Template/
 ├── README.md              # 项目说明文档
 ├── LICENSE               # MIT 开源协议
@@ -255,7 +256,7 @@ git push -u origin main
 
 2. **打开 Obsidian 设置**
    - 点击设置图标 ⚙️
-   - 找到"Obsidian Git"插件
+   - 找到 "Obsidian Git" 插件
 
 3. **配置自动同步**
    - Auto commit interval: 30（分钟）
@@ -331,7 +332,7 @@ git push -u origin main
 ### 报告问题
 
 1. 访问 [Issues](https://github.com/CK-bantang/Obsidian-Template/issues)
-2. 点击"New Issue"
+2. 点击 "New Issue"
 3. 详细描述问题或建议
 4. 如果是 bug，请提供：
    - 复现步骤
@@ -342,7 +343,7 @@ git push -u origin main
 ### 提交代码
 
 1. **Fork 本仓库**
-   - 点击仓库右上角的"Fork"按钮
+   - 点击仓库右上角的 "Fork" 按钮
 
 2. **创建特性分支**
    ```bash
@@ -362,9 +363,9 @@ git push -u origin main
 
 5. **开启 Pull Request**
    - 访问你的 Fork 仓库
-   - 点击"Compare & pull request"
+   - 点击 "Compare & pull request"
    - 填写 PR 描述
-   - 点击"Create pull request"
+   - 点击 "Create pull request"
 
 ---
 
