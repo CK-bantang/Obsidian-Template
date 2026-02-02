@@ -6,6 +6,56 @@
 
 这是一个精心配置的 Obsidian 知识库，专为学习和知识管理而设计。通过合理的插件组合和主题配置，帮助你更高效地记录笔记、管理知识、建立知识网络。
 
+## 📥 如何使用本模板
+
+### 🎯 方式一：克隆并修改远程地址（推荐，最简单）
+
+这种方式适合大多数用户，操作简单：
+
+```bash
+# 1. 克隆模板
+git clone https://github.com/CK-bantang/Obsidian-Template.git
+cd Obsidian-Template
+
+# 2. 修改为你自己的仓库地址
+git remote set-url origin <你的仓库地址>
+
+# 例如：
+# git remote set-url origin https://github.com/你的用户名/你的仓库名.git
+```
+
+**注意**：如果你没有自己的仓库，需要先在 GitHub 创建一个新仓库，然后使用新仓库的地址。
+
+---
+
+### 🔧 方式二：Fork（适合 GitHub 用户）
+
+如果你熟悉 GitHub，可以 Fork 本仓库：
+
+1. 访问本仓库页面：[https://github.com/CK-bantang/Obsidian-Template](https://github.com/CK-bantang/Obsidian-Template)
+2. 点击右上角的 **Fork** 按钮
+3. 将仓库 Fork 到你的账号下
+4. 克隆你的 Fork 仓库：
+   ```bash
+   git clone https://github.com/[你的用户名]/Obsidian-Template.git
+   ```
+
+**优点**：
+- ✅ 可以随时同步模板的更新
+- ✅ 你拥有完全的控制权
+
+---
+
+### ⚠️ 重要说明
+
+- **不要尝试直接推送到原仓库**，会因为没有权限而失败
+- 如果看到 `Permission denied` 错误，说明你需要先修改远程仓库地址或 Fork
+- 模板中的 Git 插件已禁用推送功能，避免误推送和错误提示
+
+### 🚀 快速开始
+
+修改远程地址后，用 Obsidian 打开这个文件夹即可开始使用！
+
 ## 🎯 核心特性
 
 - 📝 **双向链接** - 建立笔记之间的关联，构建知识网络
